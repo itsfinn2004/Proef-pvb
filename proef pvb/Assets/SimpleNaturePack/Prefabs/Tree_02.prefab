@@ -58,6 +58,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
@@ -131,15 +134,15 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.25
+  - screenRelativeHeight: 0.09949406
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 5485172833262161395}
-  - screenRelativeHeight: 0.048212577
+  - screenRelativeHeight: 0.004331726
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 1769123135647372774}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!1001 &7650879204028558256
 PrefabInstance:
   m_ObjectHideFlags: 0
