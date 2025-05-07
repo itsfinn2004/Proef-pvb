@@ -30,7 +30,7 @@ public class itemgone : MonoBehaviour
         GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
     }
 
-    // Draw the bounds in the Scene view
+    
     void OnDrawGizmosSelected()
     {
         Gizmos.color = boundsColor;

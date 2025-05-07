@@ -16,6 +16,7 @@ public class NaratorTrigger : MonoBehaviour
         {
             Debug.Log("player colided");
             nm.PlayAudio(NumberToPlay);
+            this.gameObject.SetActive(false);
         }
     }
 }
