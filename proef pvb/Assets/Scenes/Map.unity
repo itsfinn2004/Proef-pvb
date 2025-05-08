@@ -25441,10 +25441,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'dit is de puzzel voor de blink movement
+  m_text: 'this is the puzzle for blink movement
 
-    deze puzzel is vrij simpel,
-    je richt met je rechter joystick op de stenen om daarheen te "blinken"/teleporteren'
+
+    for this puzzle you will need
+    to cross the river with the blinking feature.
+
+    to use the blinking feature
+    push your right joystick towards where you want to blink to and release it when
+    the line goes blue'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -47307,6 +47312,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3513652152616916561, guid: 3fdf55b5e003b3541accf8756e890d39, type: 3}
+      propertyPath: m_text
+      value: 'this is the puzzle for grabbing
+
+
+        In this puzzle, the goal
+        is to pick up objects.
+
+        In the puzzle itself, one object is placed
+        far away, one nearby, and one in between.
+
+
+        For this puzzle, pick
+        up a block and place it on the corresponding button (match the color).
+
+        Once
+        that is done, the gate on the right will open.
+
+
+
+        succes'
+      objectReference: {fileID: 0}
     - target: {fileID: 3901724562156210643, guid: 3fdf55b5e003b3541accf8756e890d39, type: 3}
       propertyPath: m_LocalPosition.x
       value: -66.939995
@@ -47550,6 +47577,14 @@ PrefabInstance:
     - target: {fileID: 8229724371372924731, guid: 3fdf55b5e003b3541accf8756e890d39, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.881
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260700449320571420, guid: 3fdf55b5e003b3541accf8756e890d39, type: 3}
+      propertyPath: m_text
+      value: "this is the puzzle for aiming and shooting              In this puzzle,
+        you\u2019ll learn how to shoot with a \u201Cgun.\u201D\n\nPick up the blue
+        \u201Cgun\u201D lying on the table to the left and try to shoot the blue
+        targets below me.\nOnce you've done that, the small gate on the right will
+        open.\n\nGood luck!"
       objectReference: {fileID: 0}
     - target: {fileID: 9112674609016863678, guid: 3fdf55b5e003b3541accf8756e890d39, type: 3}
       propertyPath: m_LocalPosition.x
