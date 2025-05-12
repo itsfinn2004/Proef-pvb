@@ -15,7 +15,7 @@ public class NaratorManager : MonoBehaviour
 
     }
 
-    public void PlayAudio(int number)
+    public void PlayAudio(int number) //speelt audio af op wat de NaratorTrigger hem geeft qua nummer
     {
         audiosource.clip = VoiceLines[number];
         audiosource.Play();

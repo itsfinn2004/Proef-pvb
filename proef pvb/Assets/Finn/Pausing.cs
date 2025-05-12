@@ -7,7 +7,7 @@ public class Pausing : MonoBehaviour
     private InputAction menuButtonAction;
     public GameObject pauseMenu;
 
-    void OnEnable()
+    void OnEnable() //deze script zorgt ervoor dat als je op de menu knop klikt op je oculus controller dat er dan een pauze menu komt
     {
         menuButtonAction = new InputAction(
             name: "MenuButton",

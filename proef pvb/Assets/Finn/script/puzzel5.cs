@@ -16,7 +16,7 @@ public class puzzel5 : MonoBehaviour
     
      public void hittarget()
     {
-        if (targetHit >= targetsToHit)
+        if (targetHit >= targetsToHit) // als je alle targets geraakt heb in game dan opent de gate
         {
             openGate.Play();
             Debug.Log("all target hit");

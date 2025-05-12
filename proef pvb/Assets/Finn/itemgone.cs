@@ -34,7 +34,7 @@ public class itemgone : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.color = boundsColor;
-        Gizmos.DrawWireSphere(Application.isPlaying ? startPosition : transform.position, boundsLimit);
+        Gizmos.DrawWireSphere(Application.isPlaying ? startPosition : transform.position, boundsLimit); // maakt een sphere voor tot waar objects mogen komen voordat ze weer resetten (de locaties)
     }
 
 }

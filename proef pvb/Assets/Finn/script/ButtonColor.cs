@@ -9,9 +9,9 @@ public class ButtonColor : MonoBehaviour
 
     private void Start()    
     {
-        p3 = GameObject.Find("Puzzlemaster(test)").GetComponent<Puzzle3>();
+        p3 = GameObject.Find("Puzzelmaster").GetComponent<Puzzle3>();
         Renderer renderer = gameObject.GetComponent<Renderer>();
-        buttonColor = renderer.material.color;
+        buttonColor = renderer.material.color; //pakt de puzzlemaster om de kleuren te vergelijken
     }
 
   
@@ -20,7 +20,7 @@ public class ButtonColor : MonoBehaviour
         if (collision.gameObject.CompareTag("Cube"))
         {
             currentCube = collision.gameObject;
-            p3.CheckColors();
+            p3.CheckColors(); // als er een cube op de knop komt kijkt hij of de kleuren gelijk zijn
         }
     }
     private void OnCollisionExit(Collision collision)

@@ -6,7 +6,7 @@ public class AudioSlider : MonoBehaviour
     public Slider volumeSlider;        
     public AudioSource audioSource;    
 
-    void Start()
+    void Start() // update de audio slider voor als het te luid is
     {
         
         if (volumeSlider != null && audioSource != null)

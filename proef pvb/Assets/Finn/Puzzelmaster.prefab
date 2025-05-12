@@ -1732,7 +1732,7 @@ GameObject:
   - component: {fileID: 5834939633982118116}
   - component: {fileID: 3659943408320122616}
   m_Layer: 0
-  m_Name: Puzzlemaster(test)
+  m_Name: Puzzelmaster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -12,14 +12,14 @@ public class Puzzle3 : MonoBehaviour
     {
         foreach (ButtonColor button in buttons)
         {
-            if (button.currentCube == null)
+            if (button.currentCube == null) //als er geen cubus op de button ligt
             {
                 Debug.Log("Button missing a cube!");
                 return;
             }
 
             CubeColor cubeColor = button.currentCube.GetComponent<CubeColor>();
-            if (cubeColor == null || cubeColor.cubeColor != button.buttonColor)
+            if (cubeColor == null || cubeColor.cubeColor != button.buttonColor) // hier vergelijkt hij de kleuren van de button en de cube
             {
                 Debug.Log("Wrong color on a button!");
                

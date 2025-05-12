@@ -10,7 +10,7 @@ public class NaratorTrigger : MonoBehaviour
     {
         nm = GameObject.Find("audioManager").GetComponent<NaratorManager>(); 
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) // als je door deze trigger gaat geeft deze script de NaratorManager de nummer clip die hij af moet spelen
     {
         if (other.CompareTag("Player"))
         {

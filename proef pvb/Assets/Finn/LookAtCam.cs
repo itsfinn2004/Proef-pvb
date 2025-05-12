@@ -6,7 +6,7 @@ public class LookAtCam : MonoBehaviour
     
     [SerializeField] Transform transformToFollow;
 
-    const float FOLLOW_SPEED = 5;
+    const float speed = 5;
 
    
 
@@ -15,15 +15,15 @@ public class LookAtCam : MonoBehaviour
         
     }
 
-    void FixedUpdate()
+    void FixedUpdate() // als je deze script op een object zet volg die object je op een distance van waar je de transformToFollow hebt gezet in de game
     {
         transform.LookAt(Camera.main.transform, Vector3.up); 
         transform.Rotate(0f, 180f, 0f); 
         var newPosition = transform.position;
         var followPosition = transformToFollow.position;
-        newPosition.x = Mathf.Lerp(newPosition.x, followPosition.x, FOLLOW_SPEED * Time.deltaTime);
-        newPosition.y = Mathf.Lerp(newPosition.y, followPosition.y, FOLLOW_SPEED * Time.deltaTime);
-        newPosition.z = Mathf.Lerp(newPosition.z, followPosition.z, FOLLOW_SPEED * Time.deltaTime);
+        newPosition.x = Mathf.Lerp(newPosition.x, followPosition.x, speed * Time.deltaTime);
+        newPosition.y = Mathf.Lerp(newPosition.y, followPosition.y, speed * Time.deltaTime);
+        newPosition.z = Mathf.Lerp(newPosition.z, followPosition.z, speed * Time.deltaTime);
 
         transform.position = newPosition;
     }
